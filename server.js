@@ -4,6 +4,8 @@ let app=express()
 
 app.use(express.urlencoded({extended:true}))
 //getbooks
+
+app.set("view engine", "ejs");
 let books=[{
 title:"wings of Fire",author:"abdul kalam",price:2000,id:1
 },{
