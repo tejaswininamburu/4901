@@ -6,14 +6,11 @@ app.use(express.urlencoded({extended:true}))
 //getbooks
 
 app.set("view engine", "ejs");
-let books=[{
-title:"wings of Fire",author:"abdul kalam",price:2000,id:1
-},{
-title:"Database",author:"NVLS",price:20000,id:2
-},
-{
-title:"Learn C",author:"press",price:1000,id:3
-}]
+let books=[
+ { title: "The Alchemist", price: 250, author: "Paulo Coelho" },
+    { title: "Harry Potter", price: 500, author: "J.K. Rowling" },
+    { title: "Atomic Habits", price: 350, author: "James Clear" },
+    { title: "Rich Dad Poor Dad", price: 300, author: "Robert Kiyosaki" }]
 app.get("/books",(req,res)=>
 {
     // res.send(books)
